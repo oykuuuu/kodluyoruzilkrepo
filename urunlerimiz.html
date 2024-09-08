@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+              .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Yatayda ortalar */
+            justify-content: center; /* Düşeyde ortalar */
+            height: 50vh; /* Tam sayfa yüksekliği */
+            font-size: 30px;
+        }
+
+        .row {
+            display: flex; /* Flexbox kullanarak öğeleri yan yana hizalar */
+            justify-content: center; /* Yan yana hizalamak için ortalar */
+            flex-wrap: wrap; /* Yeterli alan varsa taşmasını sağlar */
+        }
+
+        .col-3 {
+            margin: 0 10px; /* Sağ ve sol kenarlarda 10px boşluk bırakır */
+            text-align: center; /* Yazıları ortalar */
+        }
+
+        .rounded-image {
+            border-radius: 15px; /* Köşeleri yuvarlatır */
+            width: 200px; /* Fotoğraf genişliğini 40px yapar */
+            height: 200px; /* Fotoğraf yüksekliğini 40px yapar */
+            display: block; /* Fotoğrafı kendi satırına yerleştirir */
+            margin: 10px auto 0; /* Fotoğrafın üstüne 10px boşluk bırakır ve ortalar */
+        }
+
+        .col-3 p {
+            font-weight: bold; /* Yazıları kalın yapar */
+            color: #FF0000; /* Yazı rengini kırmızı yapar */
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="container content">
+        <h1>Müzik Aletleri</h1>
+        <div class="row">
+            <div class="col-3">
+                <p>Keman</p>
+                <img src="keman.jpg" alt="Keman" class="rounded-image">
+            </div>
+            <div class="col-3">
+                <p>Gitar</p>
+                <img src="gitar.jpg" alt="Gitar" class="rounded-image">
+            </div>
+            <div class="col-3">
+                <p>Ukulele</p>
+                <img src="ukulele.jpg" alt="Ukulele" class="rounded-image">
+            </div>
+            <div class="col-3">
+                <p>Bateri</p>
+                <img src="bateri.jpg" alt="Bateri" class="rounded-image">
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+</html>
