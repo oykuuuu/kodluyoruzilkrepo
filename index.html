@@ -1,0 +1,44 @@
+<!--
+Merge Sort Aşamaları:
+
+Başlangıç dizisi: [16, 21, 11, 8, 12, 22]
+
+Diziyi ikiye böl:
+
+[16, 21, 11]
+[8, 12, 22]
+
+İlk yarıyı tekrar böl:
+
+[16]
+[21, 11]
+[21, 11] parçasını tekrar böl:
+
+[21]
+[11]
+Bu parçaları sırayla birleştir:
+
+[11, 21] (21 ve 11 karşılaştırılır ve küçük olan önce yazılır)
+Şimdi ilk yarıyı birleştir:
+
+[16, 11, 21] → [11, 16, 21] (küçükten büyüğe sıralanır)
+İkinci yarıyı böl:
+
+[8]
+[12, 22]
+[12, 22] parçası zaten sıralı, doğrudan birleştir:
+
+[8, 12, 22]
+Son olarak iki ana parçayı birleştir:
+
+[11, 16, 21] ve [8, 12, 22]
+Birleştirme işlemiyle son hali: [8, 11, 12, 16, 21, 22]
+
+--------------------------------------------------
+
+Big-O Gösterimi:
+
+Merge Sort'un zaman karmaşıklığı her zaman O(n log n)'dir, çünkü diziyi tekrar tekrar ikiye bölüp ardından birleştirir.
+Bu durumda Merge Sort’un aşamalarında diziyi küçük parçalara ayırma ve birleştirme işlemlerini adım adım tamamlamış olduk.
+
+-->
